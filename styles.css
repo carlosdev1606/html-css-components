@@ -1,0 +1,197 @@
+@media screen, (max-width:580px) {
+    body{
+        margin: 1px 15px 1px 15px;
+    }
+    .main-container {
+        height: 100%;
+        width: 100%;
+        background-color: #000000(239, 90, 10);
+        font-size: 22px;
+        font-weight: 700;
+    
+    }
+    
+    .dropdown-container{
+        margin-top: 12px;
+        width: 200px;
+        position: relative;
+        font-family: Montserrat;
+    
+    }
+    .dropdown-container select {
+        background-color: #F4F3EF;
+        color:#23174B;
+        font-size: 14px;
+        font-weight: 700;
+        border: 1.5px solid #C0BFC2;
+        border-radius: 8px;
+        width:164px ;
+        height: 42px;
+        padding: 12px 12px 12px 12px;
+    }
+    
+    /**flecha inicio**/
+    /**felcha fin**/
+    .dropdown-container select option {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .dropdown-container select option:checked {
+        color:#23174B;
+    }
+
+    .alternative{
+        display: flex;
+    }
+    .alternative .number {
+        border: 1px solid #23174B;
+        border-radius: 6px;
+        height: 15px;
+        width: 15px;
+        color: #23174B;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    /* FIN DROPDOWN ELEMENTOS PSEUDOELEMENTOS HOVER ESTADOS ETC*/
+    
+    /* CONTINUACION TEXTO FIRST CONTAINER*/
+    .first-container{
+        display: flex;
+        background-color: #F4F3EF;
+    
+    }
+    .first-container .text p {
+        color:#23174B;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    /*FINALIZACION TEXTO FIRST CONTAINER*/
+    
+    .second-container {
+    color: #23174B;
+    display: flex;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    
+    }
+    
+    .second-container p {
+    flex: 1;
+    text-align: right;
+    }
+    .third-container{
+        padding: 12px 20px 12px 20px;
+    }
+    
+    .third-container{
+        padding: 12px 20px 12px 20px;
+        display: block;
+    }
+    .third-container form  {
+        display: flex;
+        justify-content: space-between;
+    }
+    .third-container .name input  {
+        background-color: #F4F3EF;
+        color:#23174B;
+        font-size: 14px;
+        font-weight: 700;
+        border: 1.5px solid #C0BFC2;
+        border-radius: 8px;
+        height: 34px;
+    }
+    .third-container .name input::placeholder {
+        color: #23174B;
+    }
+    .third-container .lastname input  {
+        background-color: #F4F3EF;
+        color:#23174B;
+        font-size: 14px;
+        font-weight: 700;
+        border: 1.5px solid #C0BFC2;
+        border-radius: 8px;
+        height: 34px;
+    }
+    .third-container .lastname input::placeholder {
+        color: #23174B;
+    }
+    .third-container .drowpdown-genero {
+        text-align: center;
+        margin: 6px 0 6px 0;
+    }
+    
+    .third-container .drowpdown-calendar {
+        text-align: center;
+        margin: 6px 0 6px 0;
+    
+    }
+    .third-container .drowpdown-genero select {
+        width: 28rem;
+        background-color: #F4F3EF;
+        color:#23174B;
+        font-size: 14px;
+        font-weight: 700;
+        border: 1.5px solid #C0BFC2;
+        border-radius: 8px;
+        height: 34px;
+    }
+    .third-container .drowpdown-genero select option {
+        font-size: 14px;
+        font-weight: 700;
+        color:#23174B;
+    
+    }
+    .third-container .drowpdown-genero select option:checked {
+        color:#23174B;
+    }
+    .third-container .drowpdown-calendar select {
+        width: 28rem;
+        background-color: #F4F3EF;
+        color:#23174B;
+        font-size: 14px;
+        font-weight: 700;
+        border: 1.5px solid #C0BFC2;
+        border-radius: 8px;
+        height: 34px;
+    }
+    .third-container .drowpdown-calendar select option {
+        font-size: 14px;
+        font-weight: 700;
+        color:#23174B;
+    }
+    .third-container .drowpdown-calendar select option:checked {
+        color:#23174B;
+    }
+    
+    .fourth-container{
+        color:#23174B;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0px 10px 10px 20px;
+    }
+    
+    #campo {
+        color:#23174B;
+        font-size: 16px;
+        font-weight: 700;
+        font-weight: 400;
+    }
+    
+    .fifth-container{
+        text-align: center;
+    }
+    
+    .fifth-container button {
+        color: #ffffff;
+        background-color: #FF6549;
+        width: 116px;
+        height:50px;
+        border: 2px solid #FF6549;
+        border-radius: 8px;
+    }
+    
+}
