@@ -1,4 +1,8 @@
-@media screen, (max-width:580px) {
+
+    html {
+        font-size: 16px;
+    }
+    
     body{
         margin: 1px 15px 1px 15px;
     }
@@ -40,18 +44,19 @@
         color:#23174B;
     }
 
-    .alternative{
+    .squares {
         display: flex;
     }
-    .alternative .number {
-        border: 1px solid #23174B;
-        border-radius: 6px;
-        height: 15px;
-        width: 15px;
-        color: #23174B;
-        font-size: 12px;
-        margin-left: 20px;
-        margin-right: 20px;
+    .squares-and-form .squares .number-text .number {
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            margin: 0 1rem;
+            padding: 0.5rem 0.5rem;
+            border-radius: 8px;
+            background-color: #23174B;
+            color: #fff;
+
     }
     
     /* FIN DROPDOWN ELEMENTOS PSEUDOELEMENTOS HOVER ESTADOS ETC*/
@@ -93,7 +98,8 @@
     }
     .third-container form  {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+
     }
     .third-container .name input  {
         background-color: #F4F3EF;
@@ -103,6 +109,7 @@
         border: 1.5px solid #C0BFC2;
         border-radius: 8px;
         height: 34px;
+        margin-right:20px ;
     }
     .third-container .name input::placeholder {
         color: #23174B;
@@ -173,7 +180,7 @@
         font-weight: 700;
         padding: 0px 10px 10px 20px;
     }
-    
+
     #campo {
         color:#23174B;
         font-size: 16px;
@@ -181,11 +188,8 @@
         font-weight: 400;
     }
     
-    .fifth-container{
-        text-align: center;
-    }
     
-    .fifth-container button {
+    .third-container button {
         color: #ffffff;
         background-color: #FF6549;
         width: 116px;
@@ -193,5 +197,57 @@
         border: 2px solid #FF6549;
         border-radius: 8px;
     }
+
+    .number-text .data {
+        display:none;
+    }
+
+
+
+
+    @media screen and (min-width:481px) and (max-width:1600px){
+
+        .dropdown-container select {
+            background-color: pink; /*#F4F3EF*/
+            color:red; /*#23174B*/
+            font-size: 14px;
+            font-weight: 700;
+            border: 1.5px solid #C0BFC2;
+            border-radius: 8px;
+            width:164px ;
+            height: 42px;
+            padding: 12px 12px 12px 12px;
+        }
+        .squares-and-form{
+            display: flex;
+        }
+
+        .squares-and-form .squares {
+            display: block;
+        }
+        .squares-and-form .squares .number-text .number {
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            padding: 0.5rem 0.5rem;
+            border-radius: 8px;
+            background-color: #23174B;
+            color: #fff;
+        }
+
+        .number-text{
+            display: flex;
+            align-items: center;
+        }
+        .number-text .data {
+            display:block;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+        }
+    }
     
-}

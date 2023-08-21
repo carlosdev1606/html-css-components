@@ -23,53 +23,57 @@
         <p>Tu Perfil esta completo en un :</p>
         <p>10 % (pending-dynamic)</p>
       </div>
-      <div class="alternative">
-         <div class="number">1</div>
-         <div class="number">2</div>
-         <div class="number">3</div>
-         <div class="number">4</div>
-         <div class="number">5</div>
-         <div class="number">6</div>
-         <div class="number">7</div>
-         <div class="number">8</div>
-      </div>
-      <div class="third-container">
-        <form action="" method="post">
-          <div class="name">
-            <input
-              id="POST-name"
-              type="text"
-              name="name"
-              placeholder="Nombre"
-            />
-          </div>
-          <div class="lastname">
-            <input
-              id="POST-name"
-              type="text"
-              name="name"
-              placeholder="Apellido"
-            />
-          </div>
-        </form>
-        <div class="drowpdown-genero">
-          <select >
-            <option>Genero</option>
-            <option>Masculino</option>
-            <option>Femenino</option>
-          </select>
-        </div>
-        <div class="drowpdown-calendar">
-          <select>
-            <option>Calendar drop</option>
-            <option>Calendar drop</option>
-            <option>Calendar drop</option>
-            <option>Calendar drop</option>
-          </select>
-        </div>
-      </div>
-      <div class="fourth-container">
-        <form action="/action_page.php">
+      <div class="squares-and-form">
+        <div class="squares">
+          <div class="number-text"><p class="number">1</p><p class="data">Datos personales</p></div>
+          <div class="number-text"><p class="number">2</p><p class="data">Datos de contacto</p></div>
+          <div class="number-text"><p class="number">3</p><p class="data">Contacto de emergencia</p></div>
+          <div class="number-text"><p class="number">5</p><p class="data">Poliza de seguro</p></div>
+          <div class="number-text"><p class="number">6</p><p class="data">Informacón medica</p></div>
+          <div class="number-text"><p class="number">7</p><p class="data">Información alimenticia</p></div>
+          <div class="number-text"><p class="number">8</p><p class="data">Información adicional</p></div>
+          <div class="number-text"><p class="number">4</p><p class="data">Información de vuelo</p></div>
+          <div class="number-text"><p class="number">4</p><p class="data">Campo de documentos</p></div>
+
+          
+       </div>
+       <div class="third-container">
+         <form action="" method="post">
+           <div class="name">
+             <input
+               id="POST-name"
+               type="text"
+               name="name"
+               placeholder="Nombre"
+             />
+           </div>
+           <div class="lastname">
+             <input
+               id="POST-name"
+               type="text"
+               name="name"
+               placeholder="Apellido"
+             />
+           </div>
+         </form>
+         <div class="drowpdown-genero">
+           <select >
+             <option>Genero</option>
+             <option>Masculino</option>
+             <option>Femenino</option>
+           </select>
+         </div>
+         <div class="drowpdown-calendar">
+           <select>
+             <option>Calendar drop</option>
+             <option>Calendar drop</option>
+             <option>Calendar drop</option>
+             <option>Calendar drop</option>
+           </select>
+         </div>
+
+         <!--Form to data-->
+         <form action="/action_page.php">
           <div>
             <input
               type="checkbox"
@@ -95,9 +99,8 @@
           </div>
         </form>
         <p id="campo">*Campo Obligatorio (condicional)</p>
-      </div>
-      <div class="fifth-container">
         <button>Siguiente</button>
+       </div>
       </div>
     </div>
   </body>
