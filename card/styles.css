@@ -1,6 +1,199 @@
-.section p {
-    color: blueviolet;
-    background-color: aqua;
-    height: 100px;
-    width: 100px;
+
+
+main {
+    display: grid;
+    grid-template: 0.25fr 1fr 1fr 1fr 0.5fr / 0.15fr 1fr 1fr 0.15fr ;
+    gap:1rem;
+    min-height: 100vh;
 }
+/*photo-container*/
+.card-container {
+    background-color: white;
+    height: 550px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+.a {
+    grid-area: 2 / 2 / 3 /3;
+}
+.b{
+    grid-area: 2 / 3 / 3 /4;
+}
+.c{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.d{
+    grid-area: 3 / 3 / 4 /4;
+}
+
+
+.card-container:hover {
+    transform: scale(0.95);
+}
+
+
+.photo-container {
+
+}
+
+.first img {
+    height: 250px;
+    width: 100%;
+}
+.category {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.343);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 0.0625rem solid rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    height: 3rem;
+    width: 10rem;
+    position: relative;
+    top: -1.5rem;
+    left: 8rem;
+}
+
+/*photo-container*/
+
+/* description-container*/ 
+.description-container {
+    box-sizing: border-box;
+    margin: 6px 16px 6px 16px;
+}
+.description-container h3 {
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 6px 2px 6px 2px;
+}
+.description-container .p {
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1rem;
+    color: grey;
+    margin: 6px 2px 6px 2px;
+    padding-bottom: 1.5rem;
+}
+.opinion {
+    display: flex;
+    box-sizing: border-box;
+    margin: 6px 16px 6px 16px;
+    padding-bottom: 1rem;
+}
+.stars{
+    display: flex;
+}
+
+.reviews {
+    padding-left: 30px;
+}
+
+
+
+/* description-container*/ 
+
+/* general-information*/ 
+.general-information {
+    display: flex;
+    color: rgb(68, 129, 171);
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 6px 16px 6px 16px;
+}
+.general-information .first, .general-information .second, .general-information .third  {
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding: 0 5px 0 5px;
+}
+
+.general-information .p-1  {
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    font-size: 12px;
+
+}
+.general-information .p-2  {
+    display: flex;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-size: 15px;
+}
+
+/* general-information*/ 
+
+
+/* price-button-container*/ 
+.price-button-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.price {
+    display: flex;
+}
+.price-button-container button {
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.343);
+    border: 0.0625rem solid grey;
+    border-radius: 6px;
+
+}
+
+.price-button-container button:hover {
+    background-color: rgb(68, 129, 171);
+    color: white;
+}
+
+.price-texts{
+    box-sizing: border-box;
+    align-items: baseline;
+    display: flex;
+}
+
+.pr-1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pr-2 {
+    margin-left: 0.1rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* price-button-container*/ 
+@media screen and (min-width:520px) {
+    .card-container {
+        background-color: white;
+        height: 600px;
+        width: 400px;
+    }
+
+    main {
+        display: grid;
+        grid-template: 0.25fr 1fr 1fr 1fr 0.5fr / 0.5fr 2fr 2fr 2fr 2fr 0.25fr ;
+        gap:1rem;
+        min-height: 100vh;
+    }
+    .a {
+        grid-area: 2 / 2 / 3 /3;
+    }
+    .b{
+        grid-area: 2 / 3 / 3 /4;
+    }
+    .c{
+        grid-area: 2 / 4 / 3 /5;
+    }
+    
+    .d{
+        grid-area: 2 / 5 / 3 /5;
+    }
+
+} 
