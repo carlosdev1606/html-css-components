@@ -18,15 +18,12 @@ main {
     grid-area: 2 / 2 / 3 /3;
 }
 .b{
-    grid-area: 2 / 3 / 3 /4;
+    grid-area: 2 / 3 / 3 / 4;
 }
-.c{
+.x{
     grid-area: 3 / 2 / 4 / 3;
 }
 
-.d{
-    grid-area: 3 / 3 / 4 /4;
-}
 
 
 .card-container:hover {
@@ -43,16 +40,23 @@ main {
     width: 100%;
 }
 .category {
+    font-family: "open sans", sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 8px 16px;
     background-color: white;
-    color: rgba(0, 0, 0, 0.343);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 0.0625rem solid rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
+    color: #292929;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,.4);
+    border-radius: 8px;
     height: 3rem;
-    width: 10rem;
+    width: 90%;
     position: relative;
     top: -1.5rem;
-    left: 8rem;
+    left: 1.2rem;
+    border: none;
+
 }
 
 /*photo-container*/
@@ -63,14 +67,16 @@ main {
     margin: 6px 16px 6px 16px;
 }
 .description-container h3 {
+    font-family: "open sans", sans-serif;
     box-sizing: border-box;
+    color:#000000;
     font-weight: bold;
-    font-size: 1.2rem;
-    margin: 6px 2px 6px 2px;
+    font-size: 16px;
+    margin: 6px 2px 16px 2px;
+
 }
 .description-container .p {
     box-sizing: border-box;
-    font-weight: bold;
     font-size: 1rem;
     color: grey;
     margin: 6px 2px 6px 2px;
@@ -79,15 +85,22 @@ main {
 .opinion {
     display: flex;
     box-sizing: border-box;
-    margin: 6px 16px 6px 16px;
+
     padding-bottom: 1rem;
+    align-items: center;
 }
 .stars{
     display: flex;
+    color: rgb(251, 188, 5);
+    font-size: 18.4px;
 }
 
 .reviews {
     padding-left: 30px;
+    color:#717171;
+    font-size:12px ;
+    font-family: 'open';
+    text-transform: uppercase;
 }
 
 
@@ -100,7 +113,7 @@ main {
     color: rgb(68, 129, 171);
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 6px 16px 6px 16px;
+
 }
 .general-information .first, .general-information .second, .general-information .third  {
     display: block;
@@ -113,13 +126,17 @@ main {
     text-transform: uppercase;
     margin-bottom: 0.25rem;
     font-size: 12px;
+    color: #4481ab;
+    font-family: "open sans", sans-serif;
 
 }
 .general-information .p-2  {
     display: flex;
     font-weight: bold;
     font-size: 0.8rem;
-    font-size: 15px;
+    font-size: 12px;
+    color: #4481ab;
+    font-family: "open sans", sans-serif;
 }
 
 /* general-information*/ 
@@ -144,6 +161,10 @@ main {
 
 }
 
+.price-button-container{
+    align-items: flex-end;
+}
+
 .price-button-container button:hover {
     background-color: rgb(68, 129, 171);
     color: white;
@@ -159,6 +180,7 @@ main {
     color: black;
     font-weight: bold;
     font-size: 1.5rem;
+    margin-right: 2px;
 }
 
 .pr-2 {
@@ -169,6 +191,113 @@ main {
 }
 
 /* price-button-container*/ 
+
+
+/* FOOTER*/
+footer {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    gap: 1rem;
+    height:1000px;
+}
+
+.card-subscription{
+    box-sizing: border-box;
+    grid-area: 2 / 2 /3 /3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.above {
+    flex:0.4;
+    padding: 40px;
+}
+.above p {
+   color:hsl(218, 22%, 67%);
+   line-height: 1.4;
+}
+.above h4{
+   color: hsl(71, 73%, 54%);
+   padding-bottom: 12px;
+   font-weight: bold;
+   font-size: 20px;
+}
+.above h3 {
+    color:hsl(179, 62%, 43%);
+    font-size: 28px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.below{
+    flex:0.6;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.monthly-price{
+    background-color: hsl(179, 62%, 43%);
+    flex:0.55;
+    padding: 40px;
+    border-bottom-left-radius: 15px;
+}
+.monthly-price h4 {
+    font-size: 20px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+.monthly-price p {
+    font-size: 14x;
+    line-height: 1.2;
+}
+.pr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+.usd {
+    font-size: 25px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-right: 6px;
+}
+
+.monthly-price button{
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    border:none;
+    border-radius: 4px;
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffffb3;
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
+}
+
+.why-us{
+    background-color: hsl(179, 44%, 56%);
+    flex:0.45;
+    padding: 40px;
+    border-bottom-right-radius: 15px;
+}
+.why-us h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.why-us p {
+    font-size: 14x;
+    line-height: 1.2;
+}
+
+/* FOOTER*/
 @media screen and (min-width:520px) {
     .card-container {
         background-color: white;
