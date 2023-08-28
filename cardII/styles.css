@@ -1,0 +1,185 @@
+.html {
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+}
+.card-container  {
+    border-radius: 1rem;
+    box-shadow:rgba(0, 0, 0, 0.2);
+    width: 23rem;
+    height: 33rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: 100%;
+    flex: 1;
+}
+.bottom{
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+}
+.description {
+    position: absolute;
+    top:10.5rem;
+    left: 0.8rem;
+    padding-bottom: 0.75rem;
+    width: 22.8rem;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.47);
+    color: white;
+    padding-left:1rem;
+    padding-right: 1rem;
+
+}
+.description h3 {
+    box-sizing: border-box;
+    margin:0;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.description p {
+    box-sizing: border-box;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin:0;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.container {
+    width: 100%;
+}
+
+.parent-grid {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    height: auto;
+}
+.information-grid{
+    display: grid;
+    grid-template:  1fr 1fr  /  1fr 1fr ;
+    gap: 0.5rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+
+.item-1, .item-2, .item-3,.item-4  {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.first {
+    color: rgb(84, 110, 122);
+    font-weight: 700;
+    box-sizing: border-box;
+    margin:0;
+    font-family: "Helvetica Neue";
+}
+.second {
+    color: rgb(59, 121, 61);
+    box-sizing: border-box;
+    font-weight: 500;
+    margin:0;
+    font-family: "Helvetica Neue";
+}
+
+.bottom{
+    background-color: rgb(30, 40, 48);
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+
+}
+.symbol {
+    color: rgb(84, 110, 122);
+}
+
+
+.reviews{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.stars{
+    color: rgb(252, 191, 2);
+    font-size: 1.5rem;
+    display: flex;
+    box-sizing: border-box;
+    margin:0;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+.number {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "Helvetica Neue";
+    padding-right: 0.625rem;
+    box-sizing: border-box;
+    margin:0;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+.container-price{
+
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+}
+.text-price {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: "Helvetica";
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.price {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: "Helvetica";
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 1rem;
+}
+.bottom-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+}
+
+.bottom-flex-1 {
+    box-sizing: border-box;
+    padding: 5px 12px;
+
+}
+
+.bottom-flex-2{
+    box-sizing: border-box;
+    padding: 20px 12px;
+}
+
+.bottom-flex-2 button {
+    height: 3.5rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: "Helvetica";
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: black;
+    box-shadow:rgba(0, 0, 0, 0.2);
+}
