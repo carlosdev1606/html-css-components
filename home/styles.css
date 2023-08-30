@@ -1,3 +1,57 @@
+nav  {
+    background-color: bisque;
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+nav img  {
+   width: 3rem;
+   height: auto;
+}
+
+ul {
+    display: inline-flex;
+}
+
+ul li {
+    width: 3rem;
+    margin-left: 5rem;
+
+}
+
+main {
+    width: 100%;
+}
+
+
+.section-i {
+    position: relative;
+    top:5rem;
+    max-width: 100%;
+}
+
+.cards-container {
+    max-width: 95%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.container{
+    box-sizing: border-box;
+    padding: 2rem 3rem;
+    display: flex;
+    margin: 0 auto;
+    max-width: 95%;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+/*estilos card incrustado INICIO*/
+
+
 .html {
     font-size: 16px;
 }
@@ -8,8 +62,8 @@ body{
 .card-container  {
     border-radius: 1rem;
     box-shadow:rgba(0, 0, 0, 0.2);
-    width: 23rem;
-    height: 33rem;
+    width: 350px;
+    height: 485px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -19,7 +73,8 @@ body{
 
 .top{
     width: 100%;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 .bottom{
@@ -31,9 +86,9 @@ body{
 }
 .description {
     position: absolute;
-    top:11.25rem;
+    top:10.1rem;
     padding-bottom: 0.75rem;
-    width: 22.9rem;
+    width: 100%;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.47);
     color: white;
@@ -44,7 +99,7 @@ body{
 .description h3 {
     box-sizing: border-box;
     margin:0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -56,7 +111,7 @@ body{
     font-size: 1rem;
     font-weight: 100;
 }
-.container {
+.image-description {
     width: 100%;
 }
 
@@ -185,3 +240,6 @@ body{
     color: black;
     box-shadow:rgba(0, 0, 0, 0.2);
 }
+
+
+/*estilos card incrustado FIN*/
